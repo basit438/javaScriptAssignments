@@ -1,5 +1,3 @@
-
-
 document.querySelectorAll('.btn-plus').forEach(button => {
     button.addEventListener('click', function () {
         const product = button.closest('.product');
@@ -39,13 +37,14 @@ function updateSelectedItems(product) {
         if (noItemsMessage) {
             noItemsMessage.remove();
         }
+        const itemTotalPrice = productPrice * count;
         if (!selectedItem) {
             selectedItem = document.createElement('div');
             selectedItem.classList.add('selected-item');
             selectedItem.setAttribute('data-name', productName);
             selectedItemsContainer.appendChild(selectedItem);
         }
-        selectedItem.textContent = `${productName} - $${productPrice.toFixed(2)} x ${count}`;
+        selectedItem.textContent = `${productName} - $${productPrice.toFixed(2)} x ${count} = $${itemTotalPrice.toFixed(2)}`;
     } else {
         if (selectedItem) {
             selectedItemsContainer.removeChild(selectedItem);
