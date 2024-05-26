@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('colored-pencils-6792979_1280 (1).jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('colored-pencils-6792979_1280\ \(1\).jpg') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
 }
